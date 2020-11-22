@@ -11,7 +11,7 @@
 
 #### TECHNICAL SKILLLS
 - Penetration Testing
-- Vulnerability Scan
+- Vulnerability Assessment 
 - Computer/Information/Network Security
 - PHP/HTML/Java Script/CSS/SQL/C#/VB.NET/Python Developer
 
