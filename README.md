@@ -7,7 +7,7 @@ Hello. My name is Saran Kaewnang. My nickname is GOLF. Currently working at T-NE
 
 ---
 
-#### EDUCATION
+## EDUCATION
 - 2020 - PRESENT
   - Master’s degree of Cybersecurity Engineering
   - IT Graduate School, Mahanakorn University, Thailand
