@@ -42,7 +42,7 @@ Hello. My name is Saran Kaewnang. My nickname is GOLF. Currently working at T-NE
 #### CTF
 - Root Me
   - Web - Server
-    [x]  HTML - Source Code
-    [x]  Open redirect
-    [x]  HTTP - User-agent
-    [ ]  PHP - Command injection
+    - [x] HTML - Source Code
+    - [x] Open redirect
+    - [x] HTTP - User-agent
+    - [ ] PHP - Command injection
