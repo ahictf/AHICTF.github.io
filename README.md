@@ -43,11 +43,11 @@ Hello. My name is Saran Kaewnang. My nickname is GOLF. Currently working at T-NE
 #### CTF
 - Root Me
   - Web Server
-    - :pregnant_woman:  HTML - Source code
-    - :white_check_mark:  HTTP - Open redirect
-    - :white_check_mark:  HTTP - User-agent
-    - :white_check_mark:  Weak password
-    - :white_check_mark:  PHP - Command injection
-
-
-:pregnant_woman:
+    - HTML - Source code
+    - HTTP - Open redirect
+    - HTTP - User-agent
+    - Weak password
+    - PHP - Command injection
+- HackTheBox
+- VulnHub
+- DVWA
