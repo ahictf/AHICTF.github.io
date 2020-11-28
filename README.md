@@ -45,10 +45,6 @@ Root Me
 
 Web - Server
 
-[x] HTML - Source Code
-
-[x] Open redirect
-
-[x] HTTP - User-agent
-
-[ ] PHP - Command injection
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
