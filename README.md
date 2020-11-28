@@ -10,7 +10,9 @@ Hello. My name is Saran Kaewnang. My nickname is GOLF. Currently working at T-NE
 
 ---
 
-##  AKA "AHI AHI" (อะฮิ อะฮิ)
+####  AKA "AHI AHI" (อะฮิ อะฮิ)
+
+---
 
 ## EDUCATION
 - 2020 - PRESENT
