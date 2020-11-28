@@ -41,10 +41,10 @@ Hello. My name is Saran Kaewnang. My nickname is GOLF. Currently working at T-NE
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H4B_eWV1Wv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### CTF
-Root Me
-
-Web - Server
-
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- Root Me
+  - Web Server
+    :white_check_mark: HTML - Source code
+    :white_check_mark: HTTP - Open redirect
+    :white_check_mark: HTTP - User-agent
+    :white_check_mark: Weak password
+    :white_check_mark: PHP - Command injection
