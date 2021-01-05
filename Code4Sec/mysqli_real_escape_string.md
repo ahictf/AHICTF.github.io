@@ -1,6 +1,6 @@
 # #Code4Sec #AHICTF
 
-<img align="left" width="200" height="150" src="https://ahictf.github.io/img/goat-50290_640.jpg">
+<img align="left" width="150" height="100" src="https://ahictf.github.io/img/goat-50290_640.jpg">
 
 ![Image](https://img.shields.io/github/followers/ahictf?label=AHI%20CTF&style=for-the-badge)
 ![Image](https://img.shields.io/github/last-commit/ahictf/AHICTF.github.io?style=for-the-badge)
