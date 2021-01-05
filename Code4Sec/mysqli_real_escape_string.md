@@ -7,6 +7,8 @@
 
 **If you want to succeed, you have to let failure be your *best friend!***
 
+####  AKA "AHI AHI" (อะฮิ อะฮิ)
+
 ## การใช้งานฟังก์ชัน mysqli_real_escape_string() ในภาษา PHP
 
 ### mysqli_real_escape_string()
