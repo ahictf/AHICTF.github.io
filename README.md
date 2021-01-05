@@ -1,6 +1,6 @@
 #  Saran Kaewnang
 
-<img align="left" width="200" height="200" src="https://scontent.fbkk4-2.fna.fbcdn.net/v/t1.0-9/121661586_3410281562359234_6025218595862481643_n.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFVNJ5YAwmrAhvz1xQF1W1etSc9OlxeMdW1Jz06XF4x1epBHjTiGcSTohjEM_ekmO1dEtLfyrKqvhJZru5sAtQD&_nc_ohc=a2IOTCEFQTgAX9W9Cgj&_nc_ht=scontent.fbkk4-2.fna&oh=48fdfce9c8db7db89d7ff631a0942e7c&oe=5FE0BA48">
+<img align="left" width="200" height="200" src="https://ahictf.github.io/img/goat-50290_640.jpg">
 
 ![Image](https://img.shields.io/github/followers/ahictf?label=AHI%20CTF&style=for-the-badge)
 ![Image](https://img.shields.io/github/last-commit/ahictf/AHICTF.github.io?style=for-the-badge)
