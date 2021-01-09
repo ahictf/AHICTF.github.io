@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>bin2hex() | #Code4Sec</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Prompt&display=swap" rel="stylesheet">
+</head>
+  <body>
+      <style>
+          html,body{
+            font-family: 'Prompt', sans-serif;
+
+          }
+          .brandtitle{
+            font-family: 'Audiowide', cursive;
+            font-weight: bold;
+          }
+          a{
+              color:#dc3545!important ;
+          }
+          a:hover{
+            color:#b32a37!important;
+          }
+      </style>
+      <div class="container mt-4">
+          <h2 class="brandtitle">AHI CTF</h2>
+          <hr>
+          <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mb-3">
+                    <img src="../img/goat-50290_640.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8 col-xl-9 brandtitle">
+                    <h4>Saran Kaewnang</h4>
+                    <img src="https://img.shields.io/github/followers/ahictf?label=AHI%20CTF&color=%23dc3545&style=for-the-badge">
+                    <img src="https://img.shields.io/github/watchers/ahictf/ahictf?color=%23dc3545&style=for-the-badge">
+                    <hr>
+                    
+                    <h5>"If you want to succeed, you have to let failure be your <span class="text-danger">best friend!</span>"</h5>
+                    <hr>
+                    <a  href="https://www.google.com">
+                    <span class=" fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                    
+                </div>
+          </div>
+          <hr>
+          <h2 class="brandtitle">#Code4Sec #bin2hex #PHP CSRF Protection</h2>
+          <hr>
+          <h3>การใช้งานฟังก์ชัน bin2hex() ในภาษา PHP</h3>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">bin2hex()</h5>
+              <hr>
+              <p class="card-text">bin2hex() เป็นฟังก์ชันที่มีไว้สำหรับเปลี่ยน ASCII characters ให้เป็นเลขฐาน 16</p>
+              <p><b>ตัวอย่างการใช้งานในภาษา PHP</b></p>
+              <img src="../img/bin2hex_1.PNG" class="img-fluid rounded mb-2">
+              <p><b>ผลลัพธ์ที่ได้คือ AHI CTF
+                41484920435446 </b></p>
+              <p>จะสังเกตเห็นได้ว่าฟังก์ชัน bin2hex() มีการเปลี่ยนข้อความ AHI CTF เป็นตัวเลขฐาน 16</p>
+
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Cross-site Request Forgery (CSRF)</h5>
+              <hr>
+              <p class="card-text">ก่อนอื่นเรามาทำความรู้จักกับช่องโหว่ CSRF หรือ Cross-site Request Forgery ซึ่ง CSRF เป็นช่องโหว่ที่เกิดจากผู้ไม่หวังดีสามารถบังคับให้ Browser ของผู้ใช้งานส่ง HTTP request ให้กับ Web Application กระทำบางอย่างที่อาจจะเป็นอันตรายต่อผู้ใช้งาน หลักการของ CSRF เป็นตัวอย่างดังรูป</p>
+              <img src="../img/csrf.png" class="img-fluid rounded mb-2">
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">ตัวอย่างการโจมตี Web Application ที่ไม่ได้ป้องกัน CSRF</h5>
+              <hr>
+              <p class="card-text">หน้าเว็บที่เรานำมาทดสอบโจมตีช่องโหว่ CSRF เป็นหน้าเว็บที่เกี่ยวกับการเปลี่ยนรหัสผ่านของผู้ดูแลระบบ</p>
+              <img src="../img/bin2hex_2.PNG" class="img-fluid rounded mb-2">
+              <hr>
+              <h4 class="card-text"><b>ฝั่งผู้ดูแลระบบ</b></h4>
+              <p class="card-text">เมื่อผู้ดูแลระบบดำเนินการใส่รหัสผ่าน และกดปุ่ม Change เพื่อดำเนินการเปลี่ยนแปลงรหัสผ่าน จะตรวจพบว่ามีการส่งรหัสผ่านที่ผู้ดูแลระบบต้องการจะเปลี่ยนไปทำงาน</p>
+              <img src="../img/bin2hex_3.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">ผู้ดูแลระบบสามารถเปลี่ยนแปลงรหัสผ่านได้สำเร็จ โดยรหัสผ่านคือ ahictf1234</p>
+              <img src="../img/bin2hex_4.PNG" class="img-fluid rounded mb-2">
+              <hr>
+              <h4 class="card-text"><b>ฝั่งผู้ไม่หวังดี</b></h4>
+              <p class="card-text">หากผู้ไม่หวังดีทราบถึง HTTP request ส่วนของการเปลี่ยนรหัสผ่าน ผู้ไม่หวังดีดำเนินการสร้างเว็บไซต์ที่เอาไว้หลอกผู้ดูแลระบบให้เข้าใช้งาน</p>
+              <img src="../img/bin2hex_5.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">จากโค้ด HTML ดังกล่าวจะมีการแสดงข้อความ Hello, Free Money และมีการฝังคำสั่งเรียกใช้งานรูปภาพโดยฝัง URL ให้ไปเรียกใช้งานในส่วนของการเปลี่ยนรหัสผ่านของผู้ดูแลระบบ โดยเปลี่ยนรหัสผ่านจาก ahictf1234 เป็น code4sec </p>
+              <p class="card-text">ผู้ไม่หวังดีดำเนินการทดสอบเข้าเว็บไซต์ดังกล่าวก่อนที่จะส่งให้ผู้ดูแลระบบ</p>
+              <img src="../img/bin2hex_6.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">ผู้ไม่หวังดีดำเนินการทดสอบเข้าสู่ระบบด้วยรหัสผ่าน code4sec</p>
+              <img src="../img/bin2hex_7.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">จะเห็นได้ว่าไม่สามารถเข้าใช้งานได้ ผู้ไม่หวังดีดำเนินส่ง URL ให้ผู้ดูแลระบบเข้าใช้งาน</p>
+              <img src="../img/bin2hex_8.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">เมื่อผู้ดูแลระบบเข้าใช้งานเว็บ ทดสอบเข้าระบบโดยใช้รหัสผ่านเป็น code4sec</p>
+              <img src="../img/bin2hex_9.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">จะเห็นว่าสามารถเข้าใช้งานได้ด้วยรหัสผ่าน code4sec ที่ผู้ไม่หวังดีตั้งไว้</p>
+            </div>
+          </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b03c9da1e.js" crossorigin="anonymous"></script>
+</body>
+</html>
