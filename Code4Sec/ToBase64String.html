@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>IsNumeric() | #Code4Sec</title>
+    <title>ToBase64String() | #Code4Sec</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -67,35 +67,37 @@
                 </div>
           </div>
           <hr>
-          <h2 class="brandtitle">#Code4Sec #IsNumeric #VB.NET</h2>
+          <h2 class="brandtitle">#Code4Sec #ToBase64String #VB.NET</h2>
           <hr>
-          <h3>การใช้งานฟังก์ชัน IsNumeric() ในภาษา VB.NET</h3>
+          <h3>การใช้งานฟังก์ชัน ToBase64String() ในภาษา VB.NET</h3>
 
           <div class="card mb-3">
             <div class="card-body">
-              <h5 class="card-title">IsNumeric()</h5>
+              <h5 class="card-title">ToBase64String()</h5>
               <hr>
-              <p class="card-text">IsNumeric() เป็นฟังก์ชันที่มีไว้สำหรับตรวจสอบว่าค่าเป็นค่าตัวเลขหรือไม่</p>
-              <p><b>ตัวอย่างการใช้งานในภาษา VB.NET</b></p>
-              <img src="../img/IsNumeric_1.PNG" class="img-fluid rounded mb-2">
-              <p class="card-text">ผลลัพธ์ที่ได้คือ</p>
-              <img src="../img/IsNumeric_2.PNG" class="img-fluid rounded mb-2">
-              <p>จะสังเกตเห็นได้ว่าฟังก์ชัน IsNumeric() มีการตรวจสอบข้อมูลว่าเป็นตัวเลขจริงหรือไม่</p>
-
+              <p class="card-text">ToBase64String() เป็นฟังก์ชันที่มีไว้สำหรับตรวจสอบการเข้ารหัสข้อมูลรูปแบบหนึ่ง ที่จะเปลี่ยนข้อความ หรือข้อมูลต้นฉบับไปเป็นข้อความ หรือข้อมูลชุดใหม่ ที่ไม่สามารถอ่าน หรือรู้ว่าข้อมูลชุดนี้คืออะไร ซึ่งการเข้ารหัสชนิดนี้จะแทนที่ข้อมูลด้วยตัวอักษร 64 ตัว</p>
+              <img src="../img/ascii_resize.gif" class="img-fluid rounded mb-2">
             </div>
           </div>
           <div class="card mb-3">
             <div class="card-body">
-              <h5 class="card-title">การใช้งานฟังก์ชัน IsNumeric() เพื่อตรวจสอบความถูกต้องของหมายเลขมือถือ</h5>
+              <h5 class="card-title">การใช้งานฟังก์ชัน ToBase64String() ในภาษา VB.NET</h5>
               <hr>
-              <p class="card-text">จากโค้ดด้านล่างเป็นโปรแกรมเกี่ยวกับการรับข้อมูลชื่อ และเบอร์มือถือที่ผู้ใช้งานกรอกมาแสดง</p>
-              <img src="../img/IsNumeric_3.PNG" class="img-fluid rounded mb-2">
+            
+              <img src="../img/ToBase64String_1.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">จากโค้ดด้านบนจะเห็นว่ามีการประกาศตัวแปร encodedata เป็นประเภท Byte และมีการรับข้อมูล String จากผู้ใช้งานมาเก็บไว้ที่ตัวแปร ustring และเรียกใช้งาน System.Convert.ToBase64String(encodedata) เพื่อทำเข้ารหัสค่า String ให้เป็น Base64</p>
               <p class="card-text">ผลลัพธ์ที่ได้คือ</p>
-              <img src="../img/IsNumeric_4.PNG" class="img-fluid rounded mb-2">
-              <p class="card-text">จะเห็นว่าไม่มีการตรวจสอบรูปแบบของข้อมูลมือถือให้เป็นเพียงตัวเลขเท่านั้น โดยวิธีการแก้ไขเราจะใช้ฟังก์ชัน IsNumeric() เข้ามาช่วย</p>
-              <img src="../img/IsNumeric_5.PNG" class="img-fluid rounded mb-2">
-              <p class="card-text">จากโค้ดด้านบนจะเห็นว่ามีการเพิ่มคำสั่ง IsNumeric() เข้าไปตรวจสอบหมายเลขมือถือ ผลลัพธ์ที่ได้คือ</p>
-              <img src="../img/IsNumeric_6.PNG" class="img-fluid rounded mb-2">
+              <img src="../img/ToBase64String_2.PNG" class="img-fluid rounded mb-2">
+              <p class="card-text">จะเห็นว่ามีการเข้ารหัสข้อมูล String ที่เราได้ใส่เข้าไป</p>
+              
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">ขอบคุณข้อมูลจาก</h5>
+              <hr>
+              <p class="card-text">วิธีการเข้ารหัส และถอดรหัส BASE64 (https://thiti.dev/blog/5979/)</p>
+              
             </div>
           </div>
           
