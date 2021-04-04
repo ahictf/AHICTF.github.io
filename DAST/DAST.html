@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Dynamic Application Security Testing</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Prompt&display=swap" rel="stylesheet">
+</head>
+  <body>
+      <style>
+          html,body{
+            font-family: 'Prompt', sans-serif;
+
+          }
+          .brandtitle{
+            font-family: 'Audiowide', cursive;
+            font-weight: bold;
+          }
+          a{
+              color:#dc3545!important ;
+          }
+          a:hover{
+            color:#b32a37!important;
+          }
+      </style>
+      <div class="container mt-4">
+          <h2 class="brandtitle">AHI CTF</h2>
+          <hr>
+          <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mb-3">
+                    <img src="../img/goat-50290_640.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8 col-xl-9 brandtitle">
+                    <h4>Saran Kaewnang</h4>
+                    <img src="https://img.shields.io/github/followers/ahictf?label=AHI%20CTF&color=%23dc3545&style=for-the-badge">
+                    <img src="https://img.shields.io/github/watchers/ahictf/ahictf?color=%23dc3545&style=for-the-badge">
+                    <hr>
+                    
+                    <h5>"If you want to succeed, you have to let failure be your <span class="text-danger">best friend!</span>"</h5>
+                    <hr>
+                    <a  href="https://www.google.com">
+                    <span class=" fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                    
+                </div>
+          </div>
+          <hr>
+          <h2 class="brandtitle">#Dynamic Application Security Testing</h2>
+          <hr>
+          <h3>What is DAST?</h3>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Dynamic Application Security Testing</h5>
+              <hr>
+              <p class="card-text">Dynamic Application Security Testing หรือ การทดสอบความปลอดภัยของแอปพลิเคชันแบบไดนามิก (DAST) ซึ่ง DAST เป็นการทดสอบความปลอดภัยแบบกล่องดำ หรือ Black box ประเภทหนึ่งซึ่งทำการทดสอบโดยการโจมตีแอปพลิเคชันจากภายนอก</p>
+              <p><b></b></p>
+              
+              
+
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">SAST VS DAST</h5>
+              <hr>
+              <img src="./img/img1.png" class="img-fluid rounded mb-2">
+              <p>DAST นั้นจะแตกต่างกับ SAST หรือ Static Application Security Testing อย่างชัดเจน สืบเนื่องด้วย Static Analysis เป็นการดู source code ของ Application โดยตรง แต่ Dynamic Analysis จะเน้นดูผลการตอบกลับมาจาก Web Application หลังจากการส่ง Request การโจมตีต่างๆไปยัง Application แทนมากกว่า</p>
+              
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">OWASP TOP 10</h5>
+              <hr>
+              <p class="card-text">DAST นั้นมีประสิทธิภาพดีมากในการค้นหาปัญหา และช่องโหว่จากภายนอก ซึ่งรวมถึงความเสี่ยงด้านความปลอดภัยหลายประการจาก OWASP TOP 10 เช่น SQL Injection , Cross-site Scripting (XSS)เป็นต้น</p>
+              <img src="./img/img2.jpg" class="img-fluid rounded mb-2">
+            </div>
+          </div>
+          <h3>How Does DAST Work?</h3>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">DAST ทำงานอย่างไร?</h5>
+              <hr>
+              <p class="card-text">DAST ทำงานโดยใช้การสแกนอัตโนมัติที่จำลองการโจมตีภายนอกที่เป็นอันตรายบนแอปพลิเคชัน โดยอาจจะนำ payload หรือ Code ที่เป็นอันตรายในการโจมตีมาจาก Exploit DB หรือฐานข้อมูลของ payload เป็นต้น ซึ่งในการโจมตีดังกล่าวมีไว้เพื่อระบุผลลัพธ์ที่ไม่ได้เป็นส่วนหนึ่งของชุดผลลัพธ์ที่คาดไว้ ตัวอย่างเช่น การฉีดข้อมูลที่เป็นอันตรายเพื่อเปิดเผยข้อบกพร่องในการฉีดทั่วไป</p>
+              <img src="./img/img3.png" class="img-fluid rounded mb-2">
+            </div>
+          </div>
+          <h3>DAST Pros and Cons</h3>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">ข้อดีและข้อเสียของ DAST</h5>
+              <hr>
+              <img src="./img/img4.png" class="img-fluid rounded mb-2">
+              <hr>
+              <ul class="list-unstyled">
+                <li>ข้อดีของ DAST</li>
+                <ul>
+                    <li>Technology independent เทคโนโลยีอิสระ เนื่องจาก DAST ไม่ได้ดูซอร์สโค้ดจึงไม่ใช่ภาษาหรือแพลตฟอร์มเฉพาะ สามารถเรียกใช้เครื่องมือ DAST เพียงตัวเดียวในทุกแอปพลิเคชันได้</li>
+                    <li>Low false positives มีผลที่เป็นเท็จน้อย</li>
+                    <li>Identifies configuration issues ระบุปัญหาการกำหนดค่า</li>
+                </ul>
+                <li>ข้อเสียของ DAST</li>
+                <ul>
+                    <li>Not highly scalable ข้อเสียหลักประการหนึ่งของ DAST คือการพึ่งพาผู้เชี่ยวชาญด้านความปลอดภัยอย่างมากในการเขียนการทดสอบที่มีประสิทธิภาพซึ่งทำให้ยากต่อการปรับ</li>
+                    <li>No code visibility DAST ไม่สามารถชี้ให้นักพัฒนาดูโค้ดที่มีปัญหาเพื่อการแก้ไขได้</li>
+                    <li>Slow scans DAST ใช้เวลาในการ Scan นาน</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <h3>Tools</h3>
+          
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Dynamic Application Security Testing Software</h5>
+                <hr>
+              <ul class="list-unstyled">
+                <li>รายชิ่อเครื่องมือในการทำ DAST</li>
+                <ul>
+                    <li>Burp Suite</li>
+                    <li>OWASP ZAP</li>
+                    <li>Netsparker</li>
+                    <li>Acunetix</li>
+                    <li>PortSwigger</li>
+                    <li>Abbey Scan</li>
+                    <li>Detectify</li>
+                    <li>AppCheck Ltd</li>
+                    <li>Hdiv Security</li>
+                    <li>AppScan</li>
+                    <li>Checkmarx</li>
+                    <li>Rapid7</li>
+                   
+                </ul>
+              </ul>
+            </div>
+          </div>
+          
+
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b03c9da1e.js" crossorigin="anonymous"></script>
+</body>
+</html>
