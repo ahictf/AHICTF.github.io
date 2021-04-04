@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Prevent brute force with Google recaptcha in php language</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Prompt&display=swap" rel="stylesheet">
+</head>
+  <body>
+      <style>
+          html,body{
+            font-family: 'Prompt', sans-serif;
+
+          }
+          .brandtitle{
+            font-family: 'Audiowide', cursive;
+            font-weight: bold;
+          }
+          a{
+              color:#dc3545!important ;
+          }
+          a:hover{
+            color:#b32a37!important;
+          }
+      </style>
+      <div class="container mt-4">
+          <h2 class="brandtitle">AHI CTF</h2>
+          <hr>
+          <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-3 mb-3">
+                    <img src="../img/goat-50290_640.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8 col-xl-9 brandtitle">
+                    <h4>Saran Kaewnang</h4>
+                    <img src="https://img.shields.io/github/followers/ahictf?label=AHI%20CTF&color=%23dc3545&style=for-the-badge">
+                    <img src="https://img.shields.io/github/watchers/ahictf/ahictf?color=%23dc3545&style=for-the-badge">
+                    <hr>
+                    
+                    <h5>"If you want to succeed, you have to let failure be your <span class="text-danger">best friend!</span>"</h5>
+                    <hr>
+                    <a  href="https://www.google.com">
+                    <span class=" fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                      <a  href="https://www.google.com">
+                      <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                      </span></a>
+                    
+                </div>
+          </div>
+          <hr>
+          <h2 class="brandtitle">#Prevent brute force with Google recaptcha in php language</h2>
+          <hr>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Brute force คืออะไร</h5>
+              <hr>
+              <p class="card-text">Brute force Attack เป็นการเดา password ทุกความเป็นไปได้ของตัวอักษรในแต่ละหลัก เช่น รหัส ATM มีจำนวน 4 หลัก แต่ละหลักสามารถตั้งค่าตัวเลข 0-9 ดังนั้น โปรแกรมจะทำการไล่ตัวเลขจาก 0000 ไปจนถึง 9999 หมื่นวิธีจนได้ password ที่ถูกต้อง</p>
+              <img src="https://www.hostpacific.com/wp-content/uploads/2020/11/brute-force.png" class="img-fluid rounded mb-2">
+              
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">ตัวอย่างการโจมตีด้วยเทคนิค Brute force Attack</h5>
+              <hr>
+              <ul>
+                  <li>ผู้เขียนได้ทำการจำลองเว็บหน้า Login ขึ้นมาโดยภาษา PHP</li>
+                  <img src="./img/1.PNG" class="img-fluid rounded mb-2">
+                  <li>ซึ่งถ้าหาก Login ได้สำเร็จจะดำเนินการย้ายไปยังหน้า Home</li>
+                  <img src="./img/2.PNG" class="img-fluid rounded mb-2">
+                  <li>ถ้าหากชื่อผู้ใช้งาน กับรหัสผ่านไม่ถูกต้องจะขึ้น "Username and Password Incorrect!"</li>
+                  <img src="./img/3.PNG" class="img-fluid rounded mb-2">
+                  <li>ผู้เขียนใช้โปรแกรม Burp Suite เพื่อดักจับ Packet ระหว่างทาง และนำมาทำการโจมตีด้วย Brute force จะเห็นว่าสามารถทำการโจมตีด้วยเทคนิค Brute force ได้สำเร็จ</li>
+                  <img src="./img/4.PNG" class="img-fluid rounded mb-2">
+
+              </ul>
+
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">การป้องกัน Brute force Attack ด้วย Google reCAPTCHA</h5>
+              <hr>
+              <ul>
+                  <li>ดำเนินการ Login เพื่อรับ API Key ที่ https://www.google.com/u/2/recaptcha/admin/</li>
+                  <li>ให้กรอก Label และ Domains ของเราเอง ทำการกดส่งเพื่อรับ API Key</li>
+                  <img src="./img/5.PNG" class="img-fluid rounded mb-2">
+                  <li>เราจะได้ Site key และ Secret key มา ดังรูป</li>
+                  <img src="./img/6.PNG" class="img-fluid rounded mb-2">
+                  <li>เพิ่ม Code ดังต่อไปนี้ ไปยังส่วนของ head</li>
+                  <img src="./img/7.PNG" class="img-fluid rounded mb-2">
+                  <li>เพิ่ม Code ดังต่อไปนี้ ไปยังส่วนของ form</li>
+                  <img src="./img/8.PNG" class="img-fluid rounded mb-2">
+                  <li>เพิ่ม Code ในส่วนของการตรวจสอบชื่อผู้ใช้งาน และรหัสผ่านดังต่อไปนี้</li>
+                  <img src="./img/9.PNG" class="img-fluid rounded mb-2">
+                  <li>เพียงเท่านี้เป็นอันเสร็จสิ้้น ทดสอบใช้งานหน้าเว็บ</li>
+                  <img src="./img/10.PNG" class="img-fluid rounded mb-2">
+                  <li>ทดสอบโจมตีด้วยเทคนิค Brute force Attack อีกครั้ง จะเห็นว่าไม่สามารถโจมตีด้วย Brute force Attack ได้</li>
+                  <img src="./img/11.PNG" class="img-fluid rounded mb-2">
+              </ul>
+              
+            </div>
+          </div>
+       
+          
+          
+
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b03c9da1e.js" crossorigin="anonymous"></script>
+</body>
+</html>
