@@ -210,7 +210,7 @@ section.resume-section .resume-item .resume-date {
                       ABOUT
 ====================================================*/
 #about {
-    background-image: url(https://scontent.fbkk5-3.fna.fbcdn.net/v/t1.0-9/81697317_2675273502526714_4650369440242728960_o.jpg?_nc_cat=111&ccb=2&_nc_sid=8bfeb9&_nc_eui2=AeE6BbqIwGuoyKQa6ePbpeIbJYbuk1FddbYlhu6TUV11tvEujOh7NP2a5Q4-c5go8ICxGrB74O5mc8LUxjoAO9fY&_nc_ohc=mztyUSwLXC4AX-53-qN&_nc_ht=scontent.fbkk5-3.fna&oh=396677e3772de8bd72e4b5d04f9aae45&oe=5FE559CF); 
+    background-image: url(https://wallup.net/wp-content/uploads/2018/09/30/31922-computers-geek-programming-love-romance-humor-heart.jpg); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -220,12 +220,17 @@ section.resume-section .resume-item .resume-date {
   /*font-size: 100%;*/
 }
 
+#education {
+    background: #f5f5f5;
+}
+
+
 /*==================================================
                     EXPERIENCE
 ====================================================*/  
-#experience {
+/* #experience {
     background: #f5f5f5;
-  }
+  } */
 
   #experience .card h4{
     font-family: 'Roboto Condensed', sans-serif;
